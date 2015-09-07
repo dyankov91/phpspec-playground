@@ -34,3 +34,9 @@ createPackage()
     sh make.sh
 }
 ```
+
+and then you simply run this from termianal to create a new package:
+
+```bash
+$ newpackage package-name
+```
