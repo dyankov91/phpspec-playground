@@ -18,3 +18,19 @@ $ phpspec describe SomeClass
 $ phpspec run # to create the class
 $ gulp watch # start automatically watch for changes and runs the tests.
 ```
+
+# Optional
+
+You can add the following to your `.bash_profile` file to make creating of new packages even faster.
+
+```bash
+alias newpackage=createPackage
+
+createPackage()
+{
+    git clone -q https://github.com/dyankov91/phpspec-playground $1
+    echo -e "\033[0;33mSwiched to directory $1/\033[0m"
+    cd $1/
+    sh make.sh
+}
+```
